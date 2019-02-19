@@ -39,8 +39,9 @@ int main() {
                 sum += array[k];
             }
             sum = sum/(j-i+1);
+            cout<<i<<" "<<j<<endl;
 
-            if (best < sum){
+            if (best <= sum && j-i > p.end-p.start){
                 p.start = i;
                 p.end = j;
                 p.mean = sum;
@@ -49,7 +50,7 @@ int main() {
         }
     }
 
-    cout<<p.end-p.start+1<<endl;
+    cout<<p.end<<p.start<<endl;
 
     return 0;
 }
