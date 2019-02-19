@@ -35,10 +35,10 @@ func main(){
   totalY := 0;
   fmt.Scanf("%d", &line)
 
-  for i := 0 ; i < (line*2)+1 ; i++ {
+  for i := 0 ; i < (line*2) ; i++ {
     input(&totalX, &totalY)
   }
 
-  fmt.Println(totalX/line, totalY/line)
+  fmt.Printf("%d %d", totalX/line, totalY/line)
 
 }
